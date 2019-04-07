@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+	xmlns:android="http://schemas.android.com/apk/res/android"
+	android:layout_width="fill_parent"
+	android:layout_height="fill_parent"
+	android:orientation="vertical">
+
+	<LinearLayout
+		android:orientation="vertical"
+		android:layout_width="match_parent"
+		android:layout_height="wrap_content"
+		android:gravity="center_horizontal"
+		android:id="@+id/voicelistLinearLayout1"
+		android:visibility="gone"
+		android:background="#FFFFFF">
+
+		<TextView
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:background="#FF9300"
+			android:text="                   "
+			android:id="@+id/voicecheck"
+			android:elevation="8dp"
+			android:layout_margin="20dp"/>
+
+		<Button
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:text="开始录制"
+			android:id="@+id/voicelistButton1"
+			android:layout_marginBottom="10dp"
+			android:onClick="start"/>
+
+		<TextView
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:text="文件名"/>
+
+		<EditText
+			android:layout_width="wrap_content"
+			android:ems="10"
+			android:hint="保存的文件名"
+			android:layout_height="wrap_content"
+			android:id="@+id/voicelistEditText1"
+			android:gravity="center"/>
+
+		<TextView
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:text="录制者"/>
+
+		<EditText
+			android:layout_width="wrap_content"
+			android:ems="10"
+			android:hint="User"
+			android:layout_height="wrap_content"
+			android:id="@+id/voicelistEditText2"
+			android:gravity="center"/>
+
+		<LinearLayout
+			android:orientation="horizontal"
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content">
+
+			<Button
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content"
+				android:text="保存"
+				android:onClick="save"
+				android:enabled="false"
+				android:id="@+id/voicelistButton2"
+				android:layout_margin="10dp"/>
+
+			<Button
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content"
+				android:text="丢弃"
+				android:onClick="del"
+				android:enabled="false"
+				android:layout_margin="10dp"
+				android:id="@+id/voicelistButton3"/>
+
+		</LinearLayout>
+
+	</LinearLayout>
+
+	<ListView
+		android:layout_width="match_parent"
+		android:layout_height="match_parent"
+		android:id="@+id/voicelistListView1"/>
+
+</LinearLayout>
+

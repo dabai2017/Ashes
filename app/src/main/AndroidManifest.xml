@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.guhuidougeiniyangle" >
+	
+	
+	<uses-permission android:name="android.permission.RECORD_AUDIO"/>
+	<uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"/>
+	<uses-permission android:name="android.permission.REQUEST_INSTALL_PACKAGES" />
+	<uses-permission android:name="android.permission.VIBRATE"/>
+		
+		<application
+        android:allowBackup="true"
+        android:icon="@drawable/ic_launcher"
+        android:label="@string/app_name"
+        android:theme="@style/AppTheme" 
+			
+		
+		
+		>
+        <activity
+            android:name=".MainActivity"
+            android:label="@string/app_name"
+			android:windowSoftInputMode="stateHidden|stateUnchanged" 
+			android:screenOrientation="portrait"
+			
+			>
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+		
+			<activity
+				android:name=".VoiceList"
+				android:label="采样列表"
+				android:windowSoftInputMode="stateHidden|stateUnchanged" 
+				android:screenOrientation="portrait"
+				>
+			</activity>
+			
+			<activity
+				android:name=".FileList"
+				android:label="文件选择" >
+				</activity>
+			
+			<activity
+				android:name=".TextList"
+				android:label="文本列表" 
+				
+				>
+			</activity>
+			
+		
+    </application>
+
+</manifest>

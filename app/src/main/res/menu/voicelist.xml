@@ -1,0 +1,14 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    
+    <item
+		android:showAsAction="always"
+        android:id="@+id/lz"
+        android:title="显示/隐藏录制"/>
+    
+	<item
+		android:showAsAction="always"
+        android:id="@+id/dr"
+        android:title="导入"/>
+    
+	
+</menu>

@@ -1,0 +1,77 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    
+	
+	<item
+        android:title="程序设置"
+		>
+	
+	<menu>
+    <item
+        android:id="@+id/yqsz"
+        android:title="引擎设置"/>
+	<item
+        android:id="@+id/xunfei"
+        android:title="讯飞引擎"/>
+	 </menu>
+	
+	</item>
+	
+	<item
+        android:title="原版素材"
+		>
+
+		<menu>
+			<item
+				android:id="@+id/lgly"
+				android:title="来源视频"/>
+			<item
+				android:id="@+id/ybyy"
+				android:title="原版音频"/>
+		</menu>
+
+	</item>
+	
+	
+	
+	<item
+        android:title="更多功能"
+		android:showAsAction="always">
+
+		<menu>
+			<item
+				android:id="@+id/gdwbhh"
+				android:title="自建骨灰列表"/>
+			<item
+				android:id="@+id/gdzrhh"
+				android:title="更多骨灰采样"/>
+			
+		</menu>
+
+	</item>
+	
+	
+	<item
+        android:title="关于软件">
+
+		<menu>
+				<item
+				android:id="@+id/sybz"
+				android:title="骨灰帮助"/>
+			<item
+				android:id="@+id/fxrj"
+				android:title="分享骨灰"/>
+			<item
+				android:id="@+id/gyrj"
+				android:title="关于骨灰"/>
+			<item
+				android:id="@+id/kydz"
+				android:title="开源地址"/>
+			
+		</menu>
+
+	</item>
+	
+	
+	
+	
+</menu>
